@@ -1,5 +1,5 @@
 # 🎤 Karaoke PopRock 🎶  
-A C#-based Karaoke Management System developed by **Group 8** for the **Pemrograman 2** course. This system helps karaoke businesses manage their operations smoothly — from room reservations to staff and menu management.
+A C#-based Karaoke Management System developed by **Group 8** for the **Pemrograman 2** final project. This system helps karaoke businesses manage their operations smoothly — from room reservations to staff and menu management.
 
 ---
 
