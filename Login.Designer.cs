@@ -43,6 +43,7 @@
             this.tfUsername.Name = "tfUsername";
             this.tfUsername.Size = new System.Drawing.Size(358, 31);
             this.tfUsername.TabIndex = 0;
+            this.tfUsername.TextChanged += new System.EventHandler(this.tfUsername_TextChanged);
             // 
             // tfPassword
             // 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Sql;
+using KaraokeKaryawan;
 
 namespace Karaoke_PopRock
 {
@@ -28,7 +29,7 @@ namespace Karaoke_PopRock
 
         private String AuthenticateUser(string username, string password)
         {
-            string connectionString = "Server=.;Database=Db_karaoke_poprock;User Id=Wyzord;Password=wyzord2006;";
+            string connectionString = "Server=.;Database=Db_karaoke_poprock;User Id=Anggita;Password=Anggita;";
             string role = null;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -71,7 +72,7 @@ namespace Karaoke_PopRock
 
                 if (role == "Admin")
                 {
-                    //new AdminDashboard().Show();
+                    new Form1().Show();
                 }
                 else if (role == "Kasir")
                 {
@@ -102,6 +103,11 @@ namespace Karaoke_PopRock
                 MessageBox.Show("Username atau password yang dimasukkan salah", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
+        }
+
+        private void tfUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
