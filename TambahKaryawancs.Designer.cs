@@ -1,4 +1,4 @@
-﻿namespace KaraokeKaryawan
+﻿namespace Karaoke_PopRock
 {
     partial class TambahKaryawancs
     {

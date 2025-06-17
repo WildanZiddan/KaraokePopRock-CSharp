@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace KaraokeKaryawan {
+namespace Karaoke_PopRock {
     
     
     /// <summary>
@@ -746,7 +746,7 @@ namespace KaraokeKaryawan {
         }
     }
 }
-namespace KaraokeKaryawan.Db_karaoke_poprockDataSetTableAdapters {
+namespace Karaoke_PopRock.Db_karaoke_poprockDataSetTableAdapters {
     
     
     /// <summary>
@@ -912,7 +912,7 @@ SELECT id_karyawan, nama_karyawan, notelp_karyawan, username, role, status FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::KaraokeKaryawan.Properties.Settings.Default.Db_karaoke_poprockConnectionString;
+            this._connection.ConnectionString = global::Karaoke_PopRock.Properties.Settings.Default.Db_karaoke_poprockConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -53,11 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Db_karaoke_poprockDataSet.Designer.cs" />
-    <Compile Include="Db_karaoke_poprockDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Db_karaoke_poprockDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,17 +100,6 @@
     <EmbeddedResource Include="TambahKaryawancs.resx">
       <DependentUpon>TambahKaryawancs.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Db_karaoke_poprockDataSet.xsc">
-      <DependentUpon>Db_karaoke_poprockDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Db_karaoke_poprockDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Db_karaoke_poprockDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Db_karaoke_poprockDataSet.xss">
-      <DependentUpon>Db_karaoke_poprockDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

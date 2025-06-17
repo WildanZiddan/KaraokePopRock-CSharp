@@ -1,4 +1,4 @@
-﻿namespace KaraokeKaryawan
+﻿namespace Karaoke_PopRock
 {
     partial class Form1
     {
@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox pictureBox1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbSearch = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.gunatxtCari = new Guna.UI2.WinForms.Guna2TextBox();
@@ -43,21 +43,21 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.gnbKaryawan = new Guna.UI2.WinForms.Guna2Button();
             this.dgvKaryawan = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.db_karaoke_poprockDataSet = new KaraokeKaryawan.Db_karaoke_poprockDataSet();
-            this.masterkaryawanBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.master_karyawanTableAdapter = new KaraokeKaryawan.Db_karaoke_poprockDataSetTableAdapters.master_karyawanTableAdapter();
             this.idkaryawanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namakaryawanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.notelpkaryawanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.masterkaryawanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.db_karaoke_poprockDataSet = new Karaoke_PopRock.Db_karaoke_poprockDataSet();
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.master_karyawanTableAdapter = new Karaoke_PopRock.Db_karaoke_poprockDataSetTableAdapters.master_karyawanTableAdapter();
             pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKaryawan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.db_karaoke_poprockDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterkaryawanBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_karaoke_poprockDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -88,6 +88,7 @@
             this.gbSearch.Size = new System.Drawing.Size(188, 50);
             this.gbSearch.TabIndex = 1;
             this.gbSearch.Text = "Tambah Data";
+            this.gbSearch.Click += new System.EventHandler(this.gbSearch_Click);
             // 
             // guna2Elipse1
             // 
@@ -166,17 +167,17 @@
             // 
             // dgvKaryawan
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            this.dgvKaryawan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvKaryawan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvKaryawan.AutoGenerateColumns = false;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(50)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(50)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKaryawan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(50)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(50)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKaryawan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvKaryawan.ColumnHeadersHeight = 30;
             this.dgvKaryawan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvKaryawan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -187,25 +188,25 @@
             this.roleDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn});
             this.dgvKaryawan.DataSource = this.masterkaryawanBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvKaryawan.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvKaryawan.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvKaryawan.GridColor = System.Drawing.Color.White;
             this.dgvKaryawan.Location = new System.Drawing.Point(435, 315);
             this.dgvKaryawan.Name = "dgvKaryawan";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(50)))), ((int)(((byte)(119)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKaryawan.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(50)))), ((int)(((byte)(119)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKaryawan.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvKaryawan.RowHeadersVisible = false;
             this.dgvKaryawan.RowHeadersWidth = 51;
             this.dgvKaryawan.RowTemplate.Height = 24;
@@ -233,25 +234,6 @@
             this.dgvKaryawan.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvKaryawan.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvKaryawan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKaryawan_CellContentClick);
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 40;
-            this.guna2Elipse4.TargetControl = this.dgvKaryawan;
-            // 
-            // db_karaoke_poprockDataSet
-            // 
-            this.db_karaoke_poprockDataSet.DataSetName = "Db_karaoke_poprockDataSet";
-            this.db_karaoke_poprockDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // masterkaryawanBindingSource
-            // 
-            this.masterkaryawanBindingSource.DataMember = "master_karyawan";
-            this.masterkaryawanBindingSource.DataSource = this.db_karaoke_poprockDataSet;
-            // 
-            // master_karyawanTableAdapter
-            // 
-            this.master_karyawanTableAdapter.ClearBeforeFill = true;
             // 
             // idkaryawanDataGridViewTextBoxColumn
             // 
@@ -296,6 +278,25 @@
             this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             // 
+            // masterkaryawanBindingSource
+            // 
+            this.masterkaryawanBindingSource.DataMember = "master_karyawan";
+            this.masterkaryawanBindingSource.DataSource = this.db_karaoke_poprockDataSet;
+            // 
+            // db_karaoke_poprockDataSet
+            // 
+            this.db_karaoke_poprockDataSet.DataSetName = "Db_karaoke_poprockDataSet";
+            this.db_karaoke_poprockDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 40;
+            this.guna2Elipse4.TargetControl = this.dgvKaryawan;
+            // 
+            // master_karyawanTableAdapter
+            // 
+            this.master_karyawanTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -318,8 +319,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKaryawan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.db_karaoke_poprockDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.masterkaryawanBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_karaoke_poprockDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

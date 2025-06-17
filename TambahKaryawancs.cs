@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace KaraokeKaryawan
+namespace Karaoke_PopRock
 {
     public partial class TambahKaryawancs: Form
     {

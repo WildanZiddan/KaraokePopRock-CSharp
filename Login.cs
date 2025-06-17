@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Sql;
-using KaraokeKaryawan;
+using Karaoke_PopRock;
 
 namespace Karaoke_PopRock
 {
@@ -29,7 +29,7 @@ namespace Karaoke_PopRock
 
         private String AuthenticateUser(string username, string password)
         {
-            string connectionString = "Server=.;Database=Db_karaoke_poprock;User Id=Anggita;Password=Anggita;";
+            string connectionString = "Server=.;Database=Db_karaoke_poprock;User Id=Wyzord;Password=wyzord2006;";
             string role = null;
 
             using (SqlConnection conn = new SqlConnection(connectionString))
